@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Challenge - Brochure Form</title>
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2 class="form-heading"><label for="learn-more">LEARN MORE</label></h2>
+      <form>
+        <fieldset>
+          <div class="form-group">
+            <label for="company-email">COMPANY EMAIL</label>
+            <input
+              type="email"
+              id="company-email"
+              class="form-control"
+              name="email"
+              placeholder="ninja@rocketmail.com" />
+          </div>
+          <div class="form-group">
+            <label for="name">NAME</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              name="name"
+              placeholder="John Smith" />
+          </div>
+          <div class="form-group">
+            <label for="hiring">WHERE ARE YOU HIRING?</label>
+            <input
+              id="location"
+              class="form-control"
+              required
+              type="text"
+              name="location"
+              placeholder="City, Country" />
+          </div>
+          <div class="form-group">
+            <label for="engineers"
+              >HOW MANY ENGINEERS ARE YOU HIRING IN THE NEXT 6 MONTHS?</label
+            >
+            <select id="head-count" class="form-control" name="headCount">
+              <option value="1-2">1-2 Engineers</option>
+            </select>
+          </div>
+        </fieldset>
+        <div class="button-actions">
+          <button type="button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
