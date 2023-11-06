@@ -25,7 +25,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   ```js
   element.addEventListener('click', handleClick());
   ```
-  The second one has a callback in the 2nd argument.
+  The second one allows you to invoke the function immediately.
 
 ## Notes
 
