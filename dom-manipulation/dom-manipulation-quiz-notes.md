@@ -15,7 +15,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - Is the `event` parameter of an event listener callback always useful?
   No, there are some cases where it is not necessary.
 - Would this assignment be simpler or more complicated if we didn't use a variable to keep track of the number of clicks?
-  It would be more complicated if we did not have a variable to track the numebr of clicks.
+  It would be more complicated if we did not have a variable to track the number of clicks.
 - Why is storing information about a program in variables better than only storing it in the DOM?
   Storing info in variables is better because it does not have to constantly extract and parse info from the DOM.
 
