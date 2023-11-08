@@ -15,7 +15,7 @@ function handleInput(event) {
 
 const nameInput = document.querySelector('#user-name');
 const emailInput = document.querySelector('#user-email');
-const messageTextarea = document.querySelector('user-message');
+const messageTextarea = document.querySelector('#user-message');
 
 nameInput.addEventListener('focus', handleFocus);
 nameInput.addEventListener('blur', handleBlur);
