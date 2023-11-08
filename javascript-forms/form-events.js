@@ -10,8 +10,7 @@ function handleBlur(event) {
 }
 
 function handleInput(event) {
-  console.log(event.target.name);
-  console.log('Value of name:', event.target.value);
+  console.log('Value of', event.target.name + ':', event.target.value);
 }
 
 const nameInput = document.querySelector('input[name="name"]');
