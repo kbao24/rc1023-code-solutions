@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is JSON?
-
+  JSON is a format called JavaScript Object Notation that lets you store and transport data.
 - What are serialization and deserialization?
 
 - Why are serialization and deserialization useful?
