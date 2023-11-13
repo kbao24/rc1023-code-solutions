@@ -5,15 +5,7 @@ let todos = [];
 const previousTodosJSON = localStorage.getItem('javascript-local-storage');
 
 if (previousTodosJSON !== null) {
-  const previousTodos = JSON.parse(previousTodosJSON);
-
-  if (Array.isArray(previousTodos)) {
-    todos.length = 0;
-
-    for (const todo of previousTodos) {
-      todos.push(todo);
-    }
-  }
+  todos = JSON.parse(previousTodosJSON);
 }
 
 window.addEventListener('beforeunload', function (event) {
