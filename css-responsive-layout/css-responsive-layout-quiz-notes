@@ -5,11 +5,11 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is a **breakpoint** in responsive Web design?
-
+A breakpoint is the point where the website changes to adapt to the CSS layout/design.
 - What is the advantage of using a percentage (_e.g._ `50%`) width instead of a fixed (_e.g._ `px`) width for a "column" class in a responsive layout?
-
+It helps make the webpage adapt to different screen sizes.
 - If you introduce CSS rules for a smaller `min-width` _after_ the styles for a larger `min-width` in your style sheet, the CSS rules for the **smaller** `min-width` will "win". Why is that?
-
+The min-width will win because of precedence or due to order of styles.
 ## Notes
 
 All student notes should be written here.
