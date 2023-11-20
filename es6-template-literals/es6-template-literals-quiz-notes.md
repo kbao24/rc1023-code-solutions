@@ -5,8 +5,9 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is the syntax for writing a template literal?
-
+  The syntax is `${variable} and write any strings within the backticks`
 - What is "string interpolation"?
+  String interpolation is when you substitute part of the string for values of variables or expressions.
 
 ## Notes
 
