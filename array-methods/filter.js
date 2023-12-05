@@ -15,5 +15,7 @@ const names = [
 const evenNumbers = numbers.filter((number) => number % 2 === 0);
 console.log(evenNumbers);
 
-const namesWithoutD = names.filter((name) => !/d/i.test(name));
+const namesWithoutD = names.filter(
+  (name) => !name.includes('d') || !name.includes('D')
+);
 console.log(namesWithoutD);
