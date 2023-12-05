@@ -11,3 +11,9 @@ const names = [
   'Janese',
   'Donna',
 ];
+
+const evenNumbers = numbers.filter((number) => number % 2 === 0);
+console.log(evenNumbers);
+
+const namesWithoutD = names.filter((name) => !/d/i.test(name));
+console.log(namesWithoutD);
