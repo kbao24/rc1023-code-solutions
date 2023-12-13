@@ -22,3 +22,8 @@ async function catFiles(): Promise<void> {
 }
 
 catFiles();
+
+/*
+// const [, , ...filenames] = process.argv;
+const
+*/

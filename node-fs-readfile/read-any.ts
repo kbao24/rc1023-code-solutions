@@ -15,3 +15,17 @@ async function readAnyFiles(): Promise<void> {
 }
 
 readAnyFiles();
+
+/*
+// const [, , file] = process.argv;
+const file = process.argv[2];
+// console.log(file);
+
+try {
+  const message = await readFile(file, 'utf-8');
+  console.log(message);
+} catch (err) {
+  console.log(err);
+}
+
+*/
