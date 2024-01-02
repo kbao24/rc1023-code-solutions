@@ -10,7 +10,8 @@ const v4 = [3, 5, 7, 9];
  * In one expression, log "v2 is truthy" to the console only if `v2` is truthy.
  * Expected: v1 message logs, v2 message does not.
  */
-v1 && console.log('v1 is truthy');
+console.log(v1 && 'v1 is truthy');
+console.log(v2 && 'v2 is truthy');
 
 /* TODO:
  * Demonstrate how to assign a "default value" to a variable.
@@ -19,6 +20,10 @@ v1 && console.log('v1 is truthy');
  * Log both `config1` and `config2`.
  * Expected: `config1 = { value: 'Something' }`, `config2 = 'default-value'`.
  */
+const config1 = v1 || 'default-value';
+console.log(config1);
+const config2 = v2 || 'default-value';
+console.log(config2);
 
 /* TODO:
  * Demonstrate how to assign a "default value" to a variable only if the variable is `undefined`.
@@ -29,6 +34,13 @@ v1 && console.log('v1 is truthy');
  * Expected: `config1 = { value: 'Something' }`, `config2 = ''`, `config3 = 'default-value'`.
  */
 
+const cfg1 = v1 ?? 'default-value';
+console.log(cfg1);
+const cfg2 = v2 ?? 'default-value';
+console.log(cfg2);
+const cfg3 = v3 ?? 'default-value';
+console.log(cfg3);
+
 /* TODO:
  * Use the shorthand if/else, which is especially useful for variable assignments.
  * In one expression, assign `truthy` to the variable `tern1` if v1 is truthy
@@ -37,6 +49,15 @@ v1 && console.log('v1 is truthy');
  * Log `tern1` and `tern2`.
  * Expected: `tern1 = 'truthy'`, `tern2 = 'falsy'`.
  */
+
+const tern1 = v1 ? 'truthy' : 'falsey';
+console.log(tern1);
+let tern2;
+if (v1) {
+  tern2 = 'truthy';
+} else {
+  tern2 = 'falsey';
+}
 
 /* TODO:
  * Use the shorthand for "if defined".
@@ -48,6 +69,9 @@ v1 && console.log('v1 is truthy');
  * Expected: `oc1 = 'Something'`, `oc2 = undefined`, `oc3 = undefined`.
  */
 
+const oc1 = v1?.value;
+console.log(oc1);
+
 /* TODO:
  * Copy an object and add one property.
  * In one expression, make a copy of the variable v1, add the property
@@ -56,6 +80,9 @@ v1 && console.log('v1 is truthy');
  * Expected: `sObj = { value: 'Something', foo: 'bar' }`.
  */
 
+const sObj = { ...v1, foo: 'bar' };
+console.log(sObj);
+
 /* TODO:
  * Copy an array and prepend one element.
  * In one expression, make a copy of the variable v4, add the element
@@ -63,3 +90,6 @@ v1 && console.log('v1 is truthy');
  * Log `sArr`.
  * Expected: `sArr = [100, 3, 5, 7, 9]`.
  */
+
+const sArr = [100, ...v4];
+console.log(sArr);
