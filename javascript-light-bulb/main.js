@@ -1,15 +1,15 @@
-let bulbOn = false;
+let isOn = false;
 
-const ceiling = document.querySelector('.ceiling');
-const bulb = document.querySelector('.bulb');
+const $ceiling = document.querySelector('.ceiling');
+const $bulb = document.querySelector('.bulb');
 
-bulb.addEventListener('click', function (event) {
-  bulbOn = !bulbOn;
-  if (bulbOn) {
-    ceiling.className = 'bulb-ceiling';
-    bulb.className = 'bulb-on';
+$bulb.addEventListener('click', function (event) {
+  isOn = !isOn;
+  if (isOn) {
+    $ceiling.className = 'ceiling is-lit';
+    $bulb.className = 'bulb is-on';
   } else {
-    ceiling.className = 'ceiling';
-    bulb.className = 'bulb';
+    $ceiling.className = 'ceiling';
+    $bulb.className = 'bulb';
   }
 });
