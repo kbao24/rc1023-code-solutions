@@ -1,0 +1,72 @@
+h1 {
+  margin: 7rem 0 2rem;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+}
+
+header {
+  text-align: center;
+}
+
+h3 {
+  margin: 2rem auto 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h1,
+h3 {
+  color: rgb(14, 14, 14);
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  line-height: 2rem;
+  font-family: Karla, sans-serif;
+  color: rgb(100, 100, 100);
+}
+
+.overview {
+  margin-bottom: 3rem;
+}
+
+h1,
+h3,
+.learn-more {
+  text-transform: uppercase;
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: center;
+}
+
+.benefits {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefit {
+  flex-basis: 50%;
+  display: flex;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.info > p {
+  margin-top: 0;
+}
+
+.learn-more {
+  height: 3rem;
+  border: 2px solid;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgb(207, 46, 34);
+  background-color: white;
+}
